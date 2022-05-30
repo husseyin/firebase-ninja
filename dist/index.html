@@ -1,0 +1,72 @@
+<!-- npm i webpack webpack-cli -D
+komutu ile webpack ve webpack-cli paketlerini yüklüyoruz,
+böylece herhangi bir cli(react, angular..) kullanmadan kodlarımızı derleyebileceğiz 
+dosya yolu gibi config ayarlar için webpack.config.js dosyasını eklemeliyiz -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase 9</title>
+</head>
+
+<body>
+    <h2 style="margin: 0; text-align: center;">Firebase Firestore</h2>
+    <form class="add">
+        <h4 style="margin: 0">---Book Add---</h4>
+        <label for="title">Title:</label>
+        <input type="text" name="title" required>
+        <label for="author">Author:</label>
+        <input type="text" name="author" required>
+
+        <button>add a new book</button>
+    </form>
+
+    <form class="delete">
+        <h4 style="margin: 0">---Book Delete---</h4>
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+
+        <button>delete a book</button>
+    </form>
+
+    <form class="update">
+        <h4 style="margin: 0">---Book Update---</h4>
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+
+        <button>update a book</button>
+    </form>
+
+    <h2 style="margin: 0; text-align: center">Firebase Auth</h2>
+    <form class="signup">
+        <h4 style="margin: 0">---Signup---</h4>
+        <label for="email">Email:</label>
+        <input type="text" name="email" required>
+        <label for="password">Password:</label>
+        <input type="text" name="password" required>
+
+        <button>signup</button>
+    </form>
+
+    <form class="login">
+        <h4 style="margin: 0">---Login---</h4>
+        <label for="email">Email:</label>
+        <input type="text" name="email" required>
+        <label for="password">Password:</label>
+        <input type="text" name="password" required>
+
+        <button>login</button>
+    </form>
+    <button class="logout">logout</button>
+
+    <h2 style="margin: 0; text-align: center">Unsubscribing</h2>
+    <button class="unsub">unsubscribing from db/auth changes</button>
+
+    <!-- komutların çalışabilmesi için bundle.js bağladık, satır en altta olmalı -->
+    <script src="bundle.js"></script>
+</body>
+
+</html>
